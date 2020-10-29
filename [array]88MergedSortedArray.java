@@ -8,7 +8,7 @@ class Solution {
                                 nums1[tail1--] : nums2[tail2--];
         }
         
-        while(tail2 >=0){
+        while(tail2 >=0){ // while all nums2 values are smaller than nums1
             nums1[cur_index--] = nums2[tail2--];
         }
         
