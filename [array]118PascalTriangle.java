@@ -10,16 +10,18 @@ class Solution {
         res.get(0).add(1);
         
         for(int i=1; i<numRows; i++){ // start from second row
-            List<Integer> cur_row = new ArrayList<>();
+            List<Integer> cur_row = new ArrayList<>(); // refresh cur_row
             List<Integer> pre_row = res.get(i-1); // get last row
             
             //row first element forever is 1
             cur_row.add(1);
             
+            //get last row elements and sum
             for(int j=1; j<i; j++){
                 cur_row.add(pre_row.get(j-1) + pre_row.get(j));
             }
             
+            //last row element forever is 1
             cur_row.add(1);
             
             res.add(cur_row);
