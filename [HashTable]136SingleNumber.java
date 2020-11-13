@@ -5,6 +5,8 @@
    0 ^ 1 = 1
    1 ^ 0 = 1
    Because every elements appear twice except for one, so will left only one element and return it
+   
+   ** at first, i try to use hashset, but runtime is 8s.
 */
 
 class Solution {
