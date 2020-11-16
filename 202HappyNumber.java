@@ -1,3 +1,8 @@
+/*
+This answer uses the hashset to store the value of each number.
+if set contains the value then return false, means not happy number
+if next value is 1, then return true, it is happy number.
+*/
 class Solution {
     public boolean isHappy(int n) {
         Set<Integer> set = new HashSet<>();
